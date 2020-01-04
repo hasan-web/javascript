@@ -1,0 +1,31 @@
+<html>
+    <head>
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+
+    </head>
+
+    <body>
+    <i onclick="like()" class="glyphicon glyphicon-thumbs-up"><span id="likes"></i></span>
+    <i onclick="dislike()" class="glyphicon glyphicon-thumbs-down"><span id="dislikes"></i></span>
+            
+       <script>
+                 var likecount=0;
+                 var dislikecount=0;
+
+
+           function like(){
+            likecount++;
+               console.log(likecount);
+               document.getElementById("likes").innerHTML=likecount;
+              
+           }
+           function dislike(){
+            dislikecount++;
+               console.log(dislikecount);
+               document.getElementById("dislikes").innerHTML=dislikecount;
+           }
+           
+       </script>
+       </body>
+
+</html>
